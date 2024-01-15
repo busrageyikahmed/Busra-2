@@ -1,0 +1,292 @@
+/* Variable Declarations */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(255, 246, 230, 0.7); /* Pale yellow background */
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+	color: rgba(0, 128, 0, 0.9); /* Dark green text */
+}
+
+
+/*styling for headers*/
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin: 16px 0;
+        text-align: center;
+        color: rgba(252, 97, 149, 0.9); /* Pink for headings */
+    }
+    
+    h1 {
+        font-size: 39px;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    
+    h2 {
+        font-size: 31px;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    
+    h3 {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+
+
+    * stlying for text*/
+    p {
+        margin: 0;
+    }
+    
+    .margin-buttom {
+        margin-bottom: 2em;
+    }
+    
+    /*styling for lists*/
+    ul,
+    ol {
+        margin: 0;
+    }
+    
+    .padded-list {
+        margin: 16px 0;
+    }
+    
+    .padded-list-top {
+        margin: 16px 0 0 0;
+    }
+    
+    .numberless {
+        padding-left: 0;
+        list-style-type: none;
+    }
+    
+    .numberless li:not(:last-child) {
+        padding: 0%;
+    }
+    
+    .numberless li:last-child {
+        padding: 0;
+    }
+    
+    .numberless p {
+        margin: 0%;
+    }
+    
+    .constraints {
+        margin: 0 0 16px 0;
+
+/*styling for nav*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+/*stlying for figcaption */
+
+figure {
+	max-width: 70%;
+	margin: auto;
+	padding: 1em 0;
+}
+
+figure>a>img {
+	margin: 4px 0;
+}
+
+figcaption,
+figcaption a {
+	font-size: 14px;
+	color: rgba(0, 128, 0, 0.7); /* Light green for figcaption */
+	text-align: center;
+}
+
+/*stlying for links*/
+
+a {
+	color: rgba(252, 97, 149, 0.9); /* Pink links */
+	padding: 4px;
+	text-decoration: underline;
+	border-radius: 23px;
+}
+
+a:focus,
+a:hover,
+a:active {
+	background-color: rgba(252, 97, 149, 0.1); /* Light pink on hover */
+	text-align: none;
+}
+
+a:focus {
+	outline: auto;
+}
+
+.img-link,
+.img-link:hover,
+.img-link:active,
+.img-link:focus,
+.img-link:visited {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+button,
+.button,
+.button-visited,
+.button-secondary,
+.button-secondary-visited {
+	background-color: rgba(255, 246, 230, 0.7); /* Pale yellow button background */
+	color: rgba(252, 97, 149, 0.9); /* Pink button text */
+	border: 2px solid rgba(252, 97, 149, 0.5); /* Pink button border */
+}
+
+button:focus,
+button:hover,
+.button:focus,
+.button:hover,
+.button-secondary:focus,
+.button-secondary:hover,
+.button-secondary-visited:focus,
+.button-secondary-visited:hover {
+	background-color: rgba(252, 97, 149, 0.1); /* Light pink button on hover */
+	border: 2px solid rgba(252, 97, 149, 0.9); /* Dark pink border on hover */
+
+}
+
+/*styling for img*/
+
+img {
+	width:100%;
+}
+
+.project-img {
+	max-width: 500px;
+}
+
+/img-margin {
+	margin:16px 0 0 0;
+}
+
+
+
+/*style for nefes and co image - fade in the box*/
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #ffcccc;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+
+<h2>Fade in a Box</h2>
+
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Nefes /div>
+  </div>
+</div>
+
+/*animation for menu*/
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    background-color:#333;
+}
+
+.menu-item {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+  
+</body>
+</html>
+
