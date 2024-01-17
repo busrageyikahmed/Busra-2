@@ -285,8 +285,70 @@ img {
 }
 
 
+/*styling for 320px*/
+h1,
+h2,
+h3,
+h4 {
+	margin: 16px 0;
+	text-align: center;
+	color: rgba(252, 97, 149, 0.9); /* Pink for headings */
+}
 
+h1 {
+	font-size: 39px;
+	line-height: 1.5;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 31px;
+	line-height: 1.5;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 600;
+}
+.intro-span {
+	font-size: 26px;
+	font-weight: 600;
+	display: block;
+}
+
+.sub-span {
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+/*styling for main nt task2.3"*/
+
+.navtoggle li:not(:last-child) {
+	display: none;
+}
+
+.navtoggle,
+.navtoggle-responsive {
+	position: relative;
+}
+
+.navtoggle-responsive nac {
+	padding: 15px;
+	z-index: 4;
+}
+
+.navtoggle-responsive li {
+	display: block;
+	padding: 10;
+	border-top: 1px rgba(255, 246, 230, 0.7);
+}
+
+.navtoggle-responsive li:last-child {
+	padding: 10px;
+}
   
 </body>
-</html>
-
