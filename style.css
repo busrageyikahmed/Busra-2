@@ -350,5 +350,64 @@ h3 {
 .navtoggle-responsive li:last-child {
 	padding: 10px;
 }
+
+
+/*styling for side */
+
+.nav-drawer {
+	background-color: #fbfbfb;
+	color: rgba(255, 246, 230, 0.7);
+	position:fixed 
+	padding:10 px;
+	width: 100%;
+}
+
+.nav-drawer a {
+	display:inline-block;
+	text-decoration:none;
+	padding: 8px;
+	cursor:pointer;
+}
+
+.subheader a:focus {
+	outline:auto;
+}
+
+.sidenav:closed{
+	height:100%
+	width:0;
+	position:fixed;
+	index: 5;
+	top:0;
+	left:0;
+	background-color: #fbfbfb;
+	overflow: hidden;
+	transition:0.25s;
+	box-shadow: 4 px rgba(252, 97, 149, 0.9);
+}
+
+.sidenav-250{
+	height:100%
+	width:0;
+	position:fixed;
+	index: 5;
+	top:0;
+	left:0;
+	background-color: #fbfbfb;
+	overflow: hidden;
+	transition:0.25s;
+	box-shadow: 4 px rgba(252, 97, 149, 0.9);
+}
+
+/*close button*/
+
+.sidenav-250px.closebtn {
+	position:fixed
+	top: 0;
+	right: 0;
+	padding: 10px
+	font-size: 20px;
+	border: 40px;
+}
   
 </body>
