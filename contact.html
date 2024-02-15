@@ -1,73 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://kit.fontawesome.com/e8a1f85fcf.js" crossorigin="anonymous"></script>
-<i class="fa-solid fa-bars"></i>
-
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: rgb(219, 244, 202);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #ffcccc;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #ffcccc;
-  padding: 20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e8a1f85fcf.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<h3>We would love to hear from you!</h3>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Busra Geyik</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+        <main>
+            <div id="intro">
+                <div class="container">
+                    <div class="row">
+                        <div id="hero">
+                            <div class="h2-align">
+                                <h2>Get in Touch</h2>
+                                <p>Hey there! Curious about what I do, want to team up on cool projects, 
+                                    or just fancy a chat about potential opportunities? Drop me a message below,
+                                     and let's turn this into a conversation worth having! Can't wait to hear from you! 🚀😊</p>
+                            </div>
+                        </div>
+                        <div class="container-contact">
+                            <form>
+                                <div>
+                                    <label>First Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name">
+                                </div>
+                                <div>
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                                </div>
+                                <div>
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Email address">
+                                </div>
+                                <div>
+                                    <label for="subject">Subject</label>
+                                </div>
+                                <div>
+                                    <textarea id="subject" name="subject" placeholder="Please type your message.."
+                                        style="height:200px"></textarea>
+                                </div>
+                                <div class="button-space">
+                                    <input class="button contact" type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>  
 
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
-
-<footer>
-    <p>&copy; 2024 Busra Geyik. All rights reserved.</p>
-</footer>
-<script   src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Busra Geyik. All rights reserved.</p>
+        </div>
+    </footer>
+    <script   src="https://code.jquery.com/jquery-3.7.1.min.js"  
+     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busra Geyik | UX Portfolio</title>  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/e8a1f85fcf.js" crossorigin="anonymous"></script>
-    <i class="fa-solid fa-bars"></i>
-    <title>About Us</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Busra Geyik</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,58 +43,73 @@
 </head>
 <body>
 
-    <header>
-        <h1>Busra Geyik</h1>
-    </header>
 
-    <main>
-        <section>
-            <h2>About me!</h2>
-            <p>Hey there! I'm Büşra, your friendly UX/UI Designer from London. I'm all about making things super easy to use and crafting eye-catching visuals!😊</p>
-            <img src="img/aboutme.png" width="300" height="400">
+    <main id="about">
+        <div class="container">
+            <div>
+                <h1>About</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <picture>
+                        <img src="img/aboutme.png" width="300" height="400" alt="">
+                    </picture>
+                </div>
+                <div>
 
-        </section>
+                    <div class="col-md-6">
+                        <h2>About me!</h2>
+                        <p>Hey there! I'm Büşra, your friendly UX/UI Designer from London. I'm all about making things super easy to use and crafting eye-catching visuals!😊</p>
+                        <img src="img/aboutme.png" width="300" height="400" alt="">
+                        <a href="files/CV.pdf" target="_blank" class="button">Download My Resume</a>
 
-        <section>
-            <h2>What I do if I am not working</h2>
-            <p>When I'm not hunched over my laptop with a serious expression, I'm probably immersed in one of my favourite hobbies...
+                    </div>
+            </div>
+        </div>
 
-                You see, I'm a big fan of the art world, whether it's getting lost in a captivating book, wandering through art exhibitions and museums, sketching illustrations, or sipping on some matcha.
-                
-                I'm all about embracing the joy and beauty in life's little moments! 😄📚🎨🥤</p>
-        </section>
-        <section>
-            <h1>My skills!</h1>
+    
+    
+                        <div class="col-md-6">
+                            <h2>What I do when I am not working</h2>
+                            <p>When I'm not hunched over my laptop with a serious expression, I'm probably immersed in one of my favourite hobbies...
 
-            <h2>Research</h2>
-            <p>The world of research is where I feel most at home because I get to uncover valuable insights that pave the way for crafting solutions that enhance the quality of people's lives.</p>
-
-        <section>
-            <h2>Prototyping</h2>
-            <p>Throughout my bootcamp experience, I had the fantastic opportunity to hone my prototyping skills.
-
-                Among the array of tools available, I found my favorites to be Adobe XD and Figma.</p>
-        </section>
-
-
-        <section>
-            <h2>Front-end coding</h2>
-            <p>I have a foundational understanding of front-end coding, and it's an ongoing journey that I absolutely adore.
-
-                My foray into front-end coding began during my degree in Graphic Design, and I've continued to build on that knowledge to this day.
-                
-                It's a dynamic realm that I'm passionate about evolving in.</p>
-        </section>
+                                You see, I'm a big fan of the art world, whether it's getting lost in a captivating book, wandering through art exhibitions and museums, sketching illustrations, or sipping on some matcha.
+                                
+                                I'm all about embracing the joy and beauty in life's little moments! 😄📚🎨🥤</p>
+                     </div>
+                </div>
+            </div>
 
 
-        <a href="files/CV.pdf">Check out my CV!</a>
+            <div class="container">
+                <div class="row">
+                    <h2>My Skills</h2>
+                            <div class="col-sm-12 col-md-6 col-lg-3">                            
+                                    <h3>Research</h3>
+                                    <p>he world of research is where I feel most at home because I get to uncover valuable insights that pave the way for crafting solutions that enhance the quality of people's lives.</p>
+
+                                    <h3>Protoyping</h3>
+                                    <p>Throughout my bootcamp experience, I had the fantastic opportunity to hone my prototyping skills.
+
+                                        Among the array of tools available, I found my favorites to be Adobe XD and Figma.</p>
+
+                                    <h3>Front-end coding</h3>
+                                    <p>I have a foundational understanding of front-end coding, and it's an ongoing journey that I absolutely adore.
+
+                                        My foray into front-end coding began during my degree in Graphic Design, and I've continued to build on that knowledge to this day.
+                                        
+                                        It's a dynamic realm that I'm passionate about evolving in.</p>
+        
 
         <footer>
-            <p>&copy; 2024 Busra Geyik. All rights reserved.</p>
+            <div class="container">
+                <p>&copy; 2024 Busra Geyik. All rights reserved.</p>
+            </div>
         </footer>
-        <script src="js/scripts.js"></script>
         <script   src="https://code.jquery.com/jquery-3.7.1.min.js"  
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
-    </main>
-</body>
-</html>
+         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+    </html>
