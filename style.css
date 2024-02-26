@@ -1,17 +1,18 @@
 /* Variable Declarations */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	background-color: rgba(255, 246, 230, 0.7); /* Pale yellow background */
-	font-family: sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 1.5;
-	color: rgba(0, 128, 0, 0.9); /* Dark green text */
+    background-color: rgba(255, 246, 230, 0.7);
+    /* Pale yellow background */
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: rgba(0, 128, 0, 0.9);
+    /* Dark green text */
 }
-
 
 /*styling for headers*/
 h1,
@@ -20,7 +21,8 @@ h3,
 h4 {
     margin: 16px 0;
     text-align: center;
-    color: rgba(252, 97, 149, 0.9); /* Pink for headings */
+    color: rgba(252, 97, 149, 0.9);
+    /* Pink for headings */
 }
 
 h1 {
@@ -41,252 +43,218 @@ h3 {
     font-weight: 600;
 }
 
-/* stlying for text*/
+/* styling for text */
 p {
     margin: 0;
 }
 
-.margin-buttom {
+.margin-bottom {
     margin-bottom: 2em;
 }
 
- /*styling for lists*/
- ul,
- ol {
-     margin: 0;
- }
- 
- .padded-list {
-     margin: 16px 0;
- }
- 
- .padded-list-top {
-     margin: 16px 0 0 0;
- }
- 
- .numberless {
-     padding-left: 0;
-     list-style-type: none;
- }
- 
- .numberless li:not(:last-child) {
-     padding: 0%;
- }
- 
- .numberless li:last-child {
-     padding: 0;
- }
- 
- .numberless p {
-     margin: 0%;
- }
- 
- .constraints {
-     margin: 0 0 16px 0;
+/* styling for lists */
+ul,
+ol {
+    margin: 0;
+}
 
+.padded-list {
+    margin: 16px 0;
+}
 
-/*styling for img*/
+.padded-list-top {
+    margin: 16px 0 0 0;
+}
 
+.numberless {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.numberless li:not(:last-child) {
+    padding: 0;
+}
+
+.numberless li:last-child {
+    padding: 0;
+}
+
+.numberless p {
+    margin: 0;
+}
+
+.constraints {
+    margin: 0 0 16px 0;
+}
+
+/* styling for img */
 img {
-	width:100%;
+    width: 100%;
 }
 
 .project-img {
-	max-width: 500px;
+    max-width: 500px;
 }
 
-/img-margin {
-	margin:16px 0 0 0;
+.img-margin {
+    margin: 16px 0 0 0;
 }
 
-/*style for nefes and  image - fade in the box*/
+/* style for nefes and image - fade in the box */
 .container {
     position: relative;
     width: 50%;
-  }
-  
-  .image {
+}
+
+.image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
-  
-  .middle {
+}
+
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
-  
-  .container:hover .image {
+    -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
     opacity: 0.3;
-  }
-  
-  .container:hover .middle {
+}
+
+.container:hover .middle {
     opacity: 1;
-  }
-  
-  .text {
+}
+
+.text {
     background-color: #ffcccc;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-  }
-  
+}
 
-
-/*task 2.3*/
-
+/* task 2.3 */
 nav > ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .navtoggle li:not(:last-child) {
+}
+
+.navtoggle li:not(:last-child) {
     display: none;
-  }
-  
-  
-  .navtoggle, .navtoggle.responsive {
+}
+
+.navtoggle,
+.navtoggle.responsive {
     position: relative;
-  }
-  
-  .navtoggle li .icon {
+}
+
+.navtoggle li .icon {
     position: absolute;
     right: 0;
     top: 2px;
     font-size: 20px;
-  }
-  
-      
-   .navtoggle.responsive nav {
+}
+
+.navtoggle.responsive nav {
     padding: 24px 0 0;
-  }
-  
-  
-  .navtoggle.responsive li  {
+}
+
+.navtoggle.responsive li {
     display: block;
     padding: 12px 0;
     border-top: 1px solid rgb(79, 122, 165);
-  }
-  
-  .navtoggle.responsive li:last-child  {
+}
+
+.navtoggle.responsive li:last-child {
     padding: 0 0 10px;
-  }
-      
-  
-  nav > ul > li > a {
+}
+
+nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
-        color: #4a4a4a;
-  }
-  
-  nav > ul > li > a:hover {
-   color:#868B96 
-  }
-  
-    main {
+    color: #4a4a4a;
+}
+
+nav > ul > li > a:hover {
+    color: #868B96;
+}
+
+main {
     padding-top: 56px;
-  }
-  
-  .container {
-        max-width: 1200px;    
-          padding 0 15px;
-  }
-  
+}
 
-  .color {
-   height: 1200px;
-      background-color: #f3f3f3;
-  
-  }
-  
-  #contact {
-      margin-top: 40px;
-      padding: 40px 0;
-        background-color: #f6f6f6;
-  }
-  
-  
-  @media only screen and (min-width: 640px) {
-      
-      header {
-    text-align: unset;
-           padding: 30px 0;
-  }
-      
-       nav {
-      width: auto;
-      float: right;
-      margin-top: 0px;
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.color {
+    height: 1200px;
+    background-color: #f3f3f3;
+}
+
+#contact {
+    margin-top: 40px;
+    padding: 40px 0;
+    background-color: #f6f6f6;
+}
+
+@media only screen and (min-width: 640px) {
+
+    header {
+        text-align: unset;
+        padding: 30px 0;
     }
-      
-      
-          
-   .navtoggle.responsive nav {
-    padding: 0px 0 0;
-  }
-      
-      nav > ul {
-    list-style-type: none;
-    padding: 0;
-   margin: 1em 0;
-  }
-        
-      
-     nav > ul > li {
-    display: inline-block;
-         
-  } 
-      
-       .navtoggle.responsive li  {
-     padding:0px 0;
-    border-top: 0px solid rgb(79, 122, 165);
-  }
-      
-      .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-      
-      .navtoggle li:last-child {
-    display: none;
-  }
-      
-     
-      
-      main {
-    padding-top: 133px;
-  } 
-      .container {  
-         margin: 0 auto;
-          padding: 0 0px;
-  }
-  
-      
-  }
 
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 0px;
+    }
 
+    .navtoggle.responsive nav {
+        padding: 0px 0 0;
+    }
 
+    nav > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0;
+    }
 
+    nav > ul > li {
+        display: inline-block;
+    }
 
+    .navtoggle.responsive li {
+        padding: 0px 0;
+        border-top: 0px solid rgb(79, 122, 165);
+    }
 
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
 
-    
-    
+    .navtoggle li:last-child {
+        display: none;
+    }
 
+    main {
+        padding-top: 133px;
+    }
 
+    .container {
+        margin: 0 auto;
+        padding: 0 0px;
+    }
 
-
-
-
-
-
-
+}
