@@ -4,14 +4,12 @@
 }
 
 body {
-    background-color: rgba(255, 246, 230, 0.7);
-    /* Pale yellow background */
-    font-family: sans-serif;
+    background-image: url(img/background.jpeg);
+    background-position: 100%;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.5;
-    color: rgba(0, 128, 0, 0.9);
-    /* Dark green text */
+    line-height: 1.6;  
 }
 
 /*styling for headers*/
@@ -19,10 +17,7 @@ h1,
 h2,
 h3,
 h4 {
-    margin: 16px 0;
-    text-align: center;
-    color: rgba(252, 97, 149, 0.9);
-    /* Pink for headings */
+    line-height: 1.4;
 }
 
 h1 {
@@ -46,6 +41,11 @@ h3 {
 /* styling for text */
 p {
     margin: 0;
+}
+
+/*img*/
+img {
+    width: 100%
 }
 
 .margin-bottom {
@@ -89,7 +89,9 @@ ol {
 
 /* styling for img */
 img {
-    width: 100%;
+    border-radius: 50%;
+    width: 25%
+    
 }
 
 .project-img {
@@ -98,12 +100,6 @@ img {
 
 .img-margin {
     margin: 16px 0 0 0;
-}
-
-/* style for nefes and image - fade in the box */
-.container {
-    position: relative;
-    width: 50%;
 }
 
 .image {
@@ -139,6 +135,7 @@ img {
     font-size: 16px;
     padding: 16px 32px;
 }
+
 
 /* task 2.3 */
 nav > ul {
@@ -258,3 +255,4 @@ main {
     }
 
 }
+
