@@ -45,7 +45,7 @@ p {
 
 /*img*/
 img {
-    width: 100%
+    width: 100%;
 }
 
 .margin-bottom {
@@ -88,11 +88,33 @@ ol {
 }
 
 /* styling for img */
-img {
-    border-radius: 50%;
-    width: 25%
-    
+.project-card__media-wrapper img {
+    border-radius: 50vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+.project-card__media-wrapper {
+    order: -1;
+}
+
+.project-card__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    gap: 2em;
+}
+
 
 .project-img {
     max-width: 500px;
@@ -136,11 +158,17 @@ img {
     padding: 16px 32px;
 }
 
+header {
+padding: 15px 0px ;
+}
+
+
 
 /* task 2.3 */
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin:0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -152,6 +180,11 @@ nav > ul {
     position: relative;
 }
 
+.nav{
+    display:inline-block;
+    width:100%;
+    
+}
 .navtoggle li .icon {
     position: absolute;
     right: 0;
@@ -185,9 +218,6 @@ nav > ul > li > a:hover {
     color: #868B96;
 }
 
-main {
-    padding-top: 56px;
-}
 
 .container {
     max-width: 1200px;
@@ -223,9 +253,7 @@ main {
     }
 
     nav > ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 1em 0;
+       
     }
 
     nav > ul > li {
@@ -251,7 +279,10 @@ main {
 
     .container {
         margin: 0 auto;
-        padding: 0 0px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr ;
     }
 
 }
