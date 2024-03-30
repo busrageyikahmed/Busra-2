@@ -3,8 +3,21 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color:rgb(80, 154, 192); /* Blue color for header */
+    color: #fff; /* Text color for header */
+    padding: 20px; /* Add padding for spacing */
+}
+
+footer {
+    background-color:rgb(80, 154, 192); /* Green color for footer */
+    color: #fff; /* Text color for footer */
+    padding: 20px; /* Add padding for spacing */
+    width:auto;
+}
+
 body {
-    background-image: url(img/background.jpeg);
+    background-color:beige;
     background-position: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -43,10 +56,44 @@ p {
     margin: 0;
 }
 
-/*img*/
-img {
-    width: 100%;
+/*reg */
+
+.media-wrapper img{
+
+    width:50%;
 }
+.center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.just-center {
+    border-radius: 20vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    opacity: 1;
+    display: block;
+    width: 20px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-left:auto;
+    margin-right:auto;
+
+
+}
+ 
+/*for index page*/
+h1 {
+    text-align: center;
+}
+
+
 
 .margin-bottom {
     margin-bottom: 2em;
@@ -94,6 +141,9 @@ ol {
     object-fit: cover;
 }
 
+img {
+    width: 100%;
+}
 .project-card {
     display: flex;
     flex-direction: column;
@@ -183,7 +233,7 @@ nav > ul {
 .nav{
     display:inline-block;
     width:100%;
-    
+
 }
 .navtoggle li .icon {
     position: absolute;
